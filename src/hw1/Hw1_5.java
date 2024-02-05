@@ -6,11 +6,12 @@ package hw1;
 
 public class Hw1_5 {
 	public static void main(String[] args) {
+		Hw1_5 hw = new Hw1_5();
 		int origin = 1500000;
-		System.out.printf("十年後,總共有%d or %.2f" , (int)calculate(origin),calculate(origin));
+		System.out.printf("十年後,總共有%d or %.2f" , (int)hw.calculate(origin),hw.calculate(origin));
 	}
 	
-	public static double calculate (int x) {
+	public  double calculate (int x) {
 		return x*Math.pow(1+0.02, 10);
 	}
 }
